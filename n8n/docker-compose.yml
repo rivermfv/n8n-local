@@ -37,6 +37,7 @@ services:
       - DB_POSTGRESDB_USER=${POSTGRES_NON_ROOT_USER}
       - DB_POSTGRESDB_PASSWORD=${POSTGRES_NON_ROOT_PASSWORD}
       - N8N_SECURE_COOKIE=false
+      - N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true
 #      - WEBHOOK_URL=https://n8n.yourdomain.com/
       - N8N_CUSTOM_EXTENSIONS=/home/node/custom-nodes # Tell n8n where to find custom nodes
       - OLLAMA_HOST=host.docker.internal:11434
